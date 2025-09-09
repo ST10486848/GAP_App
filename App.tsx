@@ -24,7 +24,7 @@ export default function App() {
   )
 }
 
-function Homepage() {
+function Homepage({ navigation }: { navigation: any }) {
   const [showLongCourses, setshowLongCourses] = useState(false); // Those lines indicate whether the sections are expanded or collapsed
   const [showShortCourses, setshowShortCourses] = useState(false); // The intial state is collapsed (false) 
 
@@ -114,6 +114,48 @@ function Homepage() {
           )}
         </View>
       </View>
+      <Button
+        title="First Aid"
+        onPress={() => {
+          navigation.navigate('First Aid');
+        }}
+      />
+      <Button
+        title="Sewing"
+        onPress={() => {
+          navigation.navigate('Sewing');
+        }}
+      />
+      <Button
+        title="Landscaping"
+        onPress={() => {
+          navigation.navigate('Landscaping');
+        }}
+      />
+      <Button
+        title="Life Skills"
+        onPress={() => {
+          navigation.navigate('Life Skills');
+        }}
+      />
+      <Button
+        title="Child Minding"
+        onPress={() => {
+          navigation.navigate('Child Minding');
+        }}
+      />
+      <Button
+        title="Cooking"
+        onPress={() => {
+          navigation.navigate('Cooking');
+        }}
+      />
+      <Button
+        title="Garden Maintenance"
+        onPress={() => {
+          navigation.navigate('Garden Maintenance');
+        }}
+      />
     </ScrollView>
   );
 }
@@ -124,12 +166,6 @@ function FirstAid({ navigation }: { navigation: any }) {
       <TouchableOpacity style={styles.courseItem}>
         <Text style={styles.courseName}>First Aid</Text>
       </TouchableOpacity>
-      <Button
-        title="First Aid"
-        onPress={() => {
-          navigation.navigate('First Aid');
-        }}
-      />
     </View>
   );
 }
@@ -139,12 +175,6 @@ function Sewing({ navigation }: { navigation: any }) {
       <TouchableOpacity style={styles.courseItem}>
         <Text style={styles.courseName}>Sewing</Text>
       </TouchableOpacity>
-      <Button
-        title="Sewing"
-        onPress={() => {
-          navigation.navigate('Sewing');
-        }}
-      />
     </View>
   );
 }
@@ -154,12 +184,6 @@ function Landscaping({ navigation }: { navigation: any }) {
       <TouchableOpacity style={styles.courseItem}>
         <Text style={styles.courseName}>Landscaping</Text>
       </TouchableOpacity>
-      <Button
-        title="Landscaping"
-        onPress={() => {
-          navigation.navigate('Landscaping');
-        }}
-      />
     </View>
   );
 }
@@ -170,12 +194,6 @@ function LifeSkills({ navigation }: { navigation: any }) {
       <TouchableOpacity style={styles.courseItem}>
         <Text style={styles.courseName}>Life Skills</Text>
       </TouchableOpacity>
-      <Button
-        title="Life Skills"
-        onPress={() => {
-          navigation.navigate('Life Skills');
-        }}
-      />
     </View>
   );
 }
@@ -186,12 +204,6 @@ function ChildMinding({ navigation }: { navigation: any }) {
       <TouchableOpacity style={styles.courseItem}>
         <Text style={styles.courseName}>Child Minding</Text>
       </TouchableOpacity>
-      <Button
-        title="Child Minding"
-        onPress={() => {
-          navigation.navigate('Child Minding');
-        }}
-      />
     </View>
   );
 }
@@ -202,12 +214,6 @@ function Cooking({ navigation }: { navigation: any }) {
       <TouchableOpacity style={styles.courseItem}>
         <Text style={styles.courseName}>Cooking</Text>
       </TouchableOpacity>
-      <Button
-        title="Cooking"
-        onPress={() => {
-          navigation.navigate('Cooking');
-        }}
-      />
     </View>
   );
 }
@@ -217,12 +223,6 @@ function GardenMaintenance({ navigation }: { navigation: any }) {
       <TouchableOpacity style={styles.courseItem}>
         <Text style={styles.courseName}>Garden Maintenance</Text>
       </TouchableOpacity>
-      <Button
-        title="Garden Maintenance"
-        onPress={() => {
-          navigation.navigate('Garden Maintenance');
-        }}
-      />
     </View>
   );
 }
