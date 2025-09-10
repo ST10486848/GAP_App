@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {StyleSheet,View,Text,ScrollView,LayoutAnimation, TouchableOpacity, Button,
+import {StyleSheet,View,Text,ScrollView,LayoutAnimation, TouchableOpacity, Button,Image
 } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack'; 
 import { NavigationContainer} from '@react-navigation/native';
@@ -226,7 +226,7 @@ function GardenMaintenance({ navigation }: { navigation: any }) {
     </View>
   );
 }
-
+<Image source={require('./assets/Logo.png')} style={{ width: 300, height: 300 }} />
 const styles = StyleSheet.create({
   container: {
     flex: 1,
