@@ -2,7 +2,6 @@ import React from "react";
 import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 import styles from "../../styles/Styles";
 
-
 export default function FirstAid({ navigation }: { navigation: any }) {
   return (
     <View style={styles.courseList}>
@@ -11,4 +10,4 @@ export default function FirstAid({ navigation }: { navigation: any }) {
       </TouchableOpacity>
     </View>
   );
-}
+} 

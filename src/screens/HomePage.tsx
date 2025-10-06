@@ -76,27 +76,19 @@ export default function HomePage({ navigation }: { navigation: any }) {
             <View style={styles.courseList}>
               <Button
                 title="First Aid"
-                onPress={() => {
-                  navigation.navigate("First Aid");
-                }}
+                onPress={() => {navigation.navigate("FirstAid");}}
               />
               <Button
                 title="Sewing"
-                onPress={() => {
-                  navigation.navigate("Sewing");
-                }}
+                onPress={() => {navigation.navigate("Sewing"); }}
               />
               <Button
                 title="Landscaping"
-                onPress={() => {
-                  navigation.navigate("Landscaping");
-                }}
+                onPress={() => {navigation.navigate("Landscaping");}}
               />
               <Button
                 title="Life Skills"
-                onPress={() => {
-                  navigation.navigate("Life Skills");
-                }}
+                onPress={() => {navigation.navigate("LifeSkills"); }}
               />
             </View>
           )}
@@ -117,29 +109,15 @@ export default function HomePage({ navigation }: { navigation: any }) {
             <View style={styles.courseList}>
               <Button
                 title="Child Minding"
-                onPress={() => {
-                  navigation.navigate("Child Minding");
-                }}
+                onPress={() => {navigation.navigate("ChildMinding"); }}
               />
-              <Pressable
-                onPress={() => {
-                  navigation.navigate("Cooking");
-                }}
-                style={({ pressed }) => [
-                  {
-                    backgroundColor: pressed ? "#e1e8ed" : "white",
-                    padding: 8,
-                    borderRadius: 4,
-                    marginBottom: 8,
-                  },
-                ]}
-              >
-                <Text style={{ color: "#1c2938", fontSize: 16 }}>Cooking</Text>
-              </Pressable>
+              <Button
+                title="Cooking"
+                onPress={() => {navigation.navigate("Cooking");}}
+              />
               <Button
                 title="Garden Maintenance"
-                onPress={() => {
-                  navigation.navigate("Garden Maintenance");
+                onPress={() => {navigation.navigate("GardenMaintenance");
                 }}
               />
             </View>
