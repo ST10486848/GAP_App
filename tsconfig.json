@@ -6,5 +6,5 @@
     "moduleResolution": "node",
     "target": "esnext"
   },
-  
+  "extends": "expo/tsconfig.base"
 }
