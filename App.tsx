@@ -16,6 +16,7 @@ import styles from "./src/styles/Styles";
 
 // Import your new pages here:
 import HomePage from "./src/screens/HomePage";
+
 import FirstAid from "./src/screens/Functions/FirstAid";
 import Sewing from "./src/screens/Functions/Sewing";
 import Landscaping from "./src/screens/Functions/Landscaping";
@@ -26,6 +27,7 @@ import GardenMaintenance from "./src/screens/Functions/GardenMaintenace";
 
 const Stack = createStackNavigator();
 //This is the data structure that holds the courses offered by the organization
+
 export default function App() {
   return (
     <NavigationContainer>
@@ -45,6 +47,5 @@ export default function App() {
  // source={require("./assets/Logo.png")}
   //style={{ width: 300, height: 300 }} 
 ///>;
+
 }
-
-

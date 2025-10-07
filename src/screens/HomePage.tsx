@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
   StyleSheet,
   View,
+
     Text,
     ScrollView,
     LayoutAnimation,
@@ -9,6 +10,7 @@ import {
     Button,
     Image,} 
 from "react-native";
+
 import styles from "../styles/Styles"; // Importing the styles from the Styles.tsx file
 
 export default function HomePage({ navigation }: { navigation: any }) {
