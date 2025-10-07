@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import {
   StyleSheet,
   View,
-    Text,
-    ScrollView,
-    LayoutAnimation,
-    TouchableOpacity,
-    Button,
-    Image,
-    Pressable,
+  Text,
+  ScrollView,
+  LayoutAnimation,
+  TouchableOpacity,
+  Button,
+  Image,
+  Pressable,
 } from "react-native";
 import styles from "../styles/Styles"; // Importing the styles from the Styles.tsx file
 
@@ -72,7 +72,7 @@ export default function HomePage({ navigation }: { navigation: any }) {
           </TouchableOpacity>
 
           {showLongCourses && ( // This line first checks if the state od the button is true (basically open) then shows the courses
-// This block of code represents the courses under the long term courses section
+            // This block of code represents the courses under the long term courses section
             <View style={styles.courseList}>
               <Button
                 title="First Aid"
@@ -113,7 +113,7 @@ export default function HomePage({ navigation }: { navigation: any }) {
           </TouchableOpacity>
 
           {showShortCourses && (
-// This block of code represents the courses under the short term courses section 
+            // This block of code represents the courses under the short term courses section
             <View style={styles.courseList}>
               <Button
                 title="Child Minding"
@@ -125,16 +125,7 @@ export default function HomePage({ navigation }: { navigation: any }) {
                 onPress={() => {
                   navigation.navigate("Cooking");
                 }}
-                style={({ pressed }) => [
-                  {
-                    backgroundColor: pressed ? "#e1e8ed" : "white",
-                    padding: 8,
-                    borderRadius: 4,
-                    marginBottom: 8,
-                  },
-                ]}
               >
-                <Text style={{ color: "#1c2938", fontSize: 16 }}>Cooking</Text>
               </Pressable>
               <Button
                 title="Garden Maintenance"
