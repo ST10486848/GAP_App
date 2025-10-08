@@ -17,13 +17,13 @@ import styles from "./src/styles/Styles";
 // Import your new pages here:
 import HomePage from "./src/screens/HomePage";
 
-import FirstAid from "./src/screens/Functions/FirstAid";
-import Sewing from "./src/screens/Functions/Sewing";
-import Landscaping from "./src/screens/Functions/Landscaping";
-import LifeSkills from "./src/screens/Functions/Lifeskills";
-import ChildMinding from "./src/screens/Functions/ChildMinding";
-import Cooking from "./src/screens/Functions/Cooking";
-import GardenMaintenance from "./src/screens/Functions/GardenMaintenace";
+import FirstAid from "./src/screens/Page/First Aid";
+import Sewing from "./src/screens/Page/Sewing";
+import Landscaping from "./src/screens/Page/Landscaping";
+import LifeSkills from "./src/screens/Page/Lifeskills";
+import ChildMinding from "./src/screens/Page/ChildMinding";
+import Cooking from "./src/screens/Page/Cooking";
+import GardenMaintenance from "./src/screens/Page/Garden maintenace";
 
 const Stack = createStackNavigator();
 //This is the data structure that holds the courses offered by the organization

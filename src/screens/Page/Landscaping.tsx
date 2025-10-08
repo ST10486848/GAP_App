@@ -4,7 +4,7 @@ import styles from "../../styles/Styles";
 
 export default function Landscaping({ navigation }: { navigation: any }) {
   return (
-    <View style={styles.courseList}>
+    <View style={styles.container}>
       <TouchableOpacity style={styles.courseItem}>
         <Text style={styles.courseName}>Landscaping</Text>
       </TouchableOpacity>
