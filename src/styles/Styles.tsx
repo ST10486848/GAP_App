@@ -84,7 +84,8 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: "white",
   },
-  courseList: {
+  coursesButtons: {
+    backgroundColor: "#f7fafc",
     padding: 8,
   },
   courseItem: {
@@ -95,6 +96,18 @@ const styles = StyleSheet.create({
   courseName: {
     fontSize: 16,
     color: "#2d3748",
+  },
+  AddButton: {
+    backgroundColor: '#4a6da7',
+    padding: 10,
+    borderRadius: 8,
+    borderColor: '#007fff',
+    borderWidth: 3,
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: '#fff',
+    fontWeight: 'bold',
   },
 });
 

@@ -11,20 +11,22 @@ import {
   Pressable,
 } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer } from "@react-navigation/native"; 
 import styles from "./src/styles/Styles";
 
 // Import your new pages here:
 import HomePage from "./src/screens/HomePage";
-import FirstAid from "./src/screens/Page/First Aid";
-import Sewing from "./src/screens/Page/Sewing";
-import Landscaping from "./src/screens/Page/Landscaping";
-import LifeSkills from "./src/screens/Page/Lifeskills";
-import ChildMinding from "./src/screens/Page/ChildMinding";
-import Cooking from "./src/screens/Page/Cooking";
-import GardenMaintenance from "./src/screens/Page/Garden maintenace";
+
+import FirstAid from "./src/screens/Functions/FirstAid";
+import Sewing from "./src/screens/Functions/Sewing";
+import Landscaping from "./src/screens/Functions/Landscaping";
+import LifeSkills from "./src/screens/Functions/Lifeskills";
+import ChildMinding from "./src/screens/Functions/ChildMinding";
+import Cooking from "./src/screens/Functions/Cooking";
+import GardenMaintenance from "./src/screens/Functions/GardenMaintenace";
 
 const Stack = createStackNavigator();
+//This is the data structure that holds the courses offered by the organization
 
 //This block of code is responsible for the navigation between pages
 export default function App() {
@@ -39,15 +41,16 @@ export default function App() {
         <Stack.Screen name="First Aid" component={FirstAid} />
         <Stack.Screen name="Sewing" component={Sewing} />
         <Stack.Screen name="Landscaping" component={Landscaping} />
-        <Stack.Screen name="Life Skills" component={LifeSkills} />
-        <Stack.Screen name="Child minding" component={ChildMinding} />
+        <Stack.Screen name="LifeSkills" component={LifeSkills} />
+        <Stack.Screen name="ChildMinding" component={ChildMinding} />
         <Stack.Screen name="Cooking" component={Cooking} />
-        <Stack.Screen name="Garden Maintenance" component={GardenMaintenance} />
+        <Stack.Screen name="GardenMaintenance" component={GardenMaintenance} />
       </Stack.Navigator>
     </NavigationContainer>
   );
-  <Image
-    source={require("./assets/Logo.png")}
-    style={{ width: 300, height: 300 }}
-  />;
+  //<Image
+ // source={require("./assets/Logo.png")}
+  //style={{ width: 300, height: 300 }} 
+///>;
+
 }
