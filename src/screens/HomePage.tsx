@@ -125,8 +125,7 @@ export default function HomePage({ navigation }: { navigation: any }) {
                 onPress={() => {
                   navigation.navigate("Cooking");
                 }}
-              >
-              </Pressable>
+              ></Pressable>
               <Button
                 title="Garden Maintenance"
                 onPress={() => {

@@ -26,7 +26,7 @@ import GardenMaintenance from "./src/screens/Page/Garden maintenace";
 
 const Stack = createStackNavigator();
 
-//This lock of code is responsible for the navigation between pages
+//This block of code is responsible for the navigation between pages
 export default function App() {
   return (
     <NavigationContainer>
@@ -35,7 +35,7 @@ export default function App() {
           name="Homepage"
           component={HomePage}
           options={{ headerShown: false }}
-        />{" "}
+        />
         <Stack.Screen name="First Aid" component={FirstAid} />
         <Stack.Screen name="Sewing" component={Sewing} />
         <Stack.Screen name="Landscaping" component={Landscaping} />
