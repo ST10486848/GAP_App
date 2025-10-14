@@ -8,11 +8,11 @@ export default function ContactDetails({ navigation }: { navigation: any }) {
       <View>
         <Text style={styles.sectionTitle}>Contact Details</Text>
         <Text style={styles.sectionTitle}>Address</Text>
-        <Text style={styles.courseContent}>GAP Training Centre, 123 Main Street, Cityville, Country</Text>
+        <Text style={styles.coursePurpose}>GAP Training Centre, 123 Main Street, Cityville, Country</Text>
         <Text style={styles.sectionTitle}>Phone</Text>
-        <Text style={styles.courseContent}>+27 123 456 7890</Text>
+        <Text style={styles.coursePurpose}>+27 123 456 7890</Text>
         <Text style={styles.sectionTitle}>Email</Text>
-        <Text style={styles.courseContent}>
+       
       </View>
     </ScrollView>
   )

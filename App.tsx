@@ -7,11 +7,11 @@ import styles from "./src/styles/Styles";
 import HomePage from "./src/screens/HomePage";
 
 import FirstAid from "./src/screens/Functions/FirstAid";
-import Sewing from "./src/screens/Functions/Sewing";
-import Landscaping from "./src/screens/Functions/Landscaping";
-import LifeSkills from "./src/screens/Functions/Lifeskills";
-import ChildMinding from "./src/screens/Functions/ChildMinding";
-import Cooking from "./src/screens/Functions/Cooking";
+import Sewing from "./src/screens/Page/Sewing";
+import Landscaping from "./src/screens/Page/Landscaping";
+import LifeSkills from "./src/screens/Page/Lifeskills";
+import ChildMinding from "./src/screens/Page/ChildMinding";
+import Cooking from "./src/screens/Page/Cooking";
 import GardenMaintenance from "./src/screens/Functions/GardenMaintenace";
 import Cart from "./src/screens/Functions/Cart"
 import ContactDetails from "./src/screens/Functions/ContactDetails"; 
