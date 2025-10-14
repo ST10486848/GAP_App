@@ -2,22 +2,23 @@
 import { StyleSheet } from "react-native";
 // This is the styleshheet file for the entire app
 const styles = StyleSheet.create({
-  container: {
+      // Start of the styling for the homepage 
+  container: { // container for the entire app(first level )
     flex: 1,
     backgroundColor: "#f8f9fa",
   },
-  scrollView: {
+  scrollView: { // scroll view for pages that need scrolling(homepage and cart)
     flex: 1,
   },
-  contentContainer: {
+  contentContainer: { // needs this one for the scroll view to work properly
     padding: 16,
     paddingBottom: 32,
   },
-  header: {
+  header: { // header section of the homepage
     alignItems: "center",
     marginBottom: 24,
   },
-  logoContainer: {
+  logoContainer: { // logo container in the header section of the homepage
     width: 120,
     height: 120,
     backgroundColor: "#e1e8ed",
@@ -26,35 +27,27 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginBottom: 16,
   },
-  logoText: {
-    fontSize: 14,
-    color: "#657786",
-    textAlign: "center",
-  },
-  title: {
+  title: { // title text in the header section of the homepage
     fontSize: 24,
     fontWeight: "bold",
     color: "#1c2938",
     marginBottom: 12,
   },
-  description: {
+  description: { // small text in the header fot=r the description of the organization
     fontSize: 16,
     color: "#4a5568",
     textAlign: "center",
     lineHeight: 22,
     marginBottom: 12,
   },
-  coursesSection: {
-    marginTop: 8,
-  },
-  sectionTitle: {
+  sectionTitle: { // The title of sections used in homepage and cart 
     fontSize: 22,
     fontWeight: "bold",
     color: "#1c2938",
     marginBottom: 16,
     textAlign: "center",
   },
-  courseCategory: {
+  courseCategory: { // The container for each course category (long term and short term)
     backgroundColor: "white",
     borderRadius: 12,
     marginBottom: 16,
@@ -62,8 +55,8 @@ const styles = StyleSheet.create({
     shadowOffset: {
       width: 0,
       height: 2,
-    },
-    shadowOpacity: 0.1,
+    }, 
+    shadowOpacity: 0.1, // Adjusted for a lighter shadow 
     shadowRadius: 3,
     elevation: 3,
     overflow: "hidden",
@@ -75,27 +68,32 @@ const styles = StyleSheet.create({
     padding: 16,
     backgroundColor: "#4a6da7",
   },
-  categoryTitle: {
+  categoryTitle: { // The text for the long term and short term courses buttons
     fontSize: 18,
     fontWeight: "600",
     color: "white",
   },
-  arrow: {
+  arrow: { // The arrow next to the long term and short term courses buttons
     fontSize: 18,
     color: "white",
-  },
-  coursesButtons: {
-    backgroundColor: "#f7fafc",
-    padding: 8,
-  },
-  courseItem: {
-    padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: "#edf2f7",
-  },
+  }, // End of the styling for the homepage
+
+
+  // Start of the styling for the courses pages 
+  
   courseName: {
     fontSize: 16,
+    fontWeight: "bold",
     color: "#2d3748",
+    marginBottom: 8,
+  },
+  courseFees: {
+    fontSize: 14,
+    color: "#2d3748",
+  },
+  coursePurpose: {
+    fontSize: 14,
+    color: "#2d3748", 
   },
   AddButton: {
     backgroundColor: '#4a6da7',
@@ -109,6 +107,14 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontWeight: 'bold',
   },
+  //Cart styling 
+  CoursesCheckbox: {
+    fontSize: 24, 
+    fontWeight: "bold",
+    color: "#1c2938",
+    marginBottom: 12,
+  },
+  
 });
 
 export default styles;

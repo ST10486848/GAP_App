@@ -30,18 +30,18 @@ export default function HomePage({ navigation }: { navigation: any }) {
     // Basically the whole page is a scroll view and it contains the history of the organization and the courses offered
     <ScrollView
       style={styles.scrollView}
-      contentContainerStyle={styles.contentContainer}
+      contentContainerStyle={styles.contentContainer} 
     >
       {/* Logo and Organization Info */}
       <View style={styles.header}>
         <View style={styles.logoContainer }>
-          <Text style={styles.logoText}>Organization Logo</Text>
+          <Text>Organization Logo</Text>
           {/* Replace with actual logo image */}
           {/* <Image source={logo} style={styles.logo} /> */}
         </View>
         <Text style={styles.title}>Empowering the Nation </Text>
         <Text style={styles.description}>
-          Founded in 2005, our organization has been dedicated to providing
+          Founded in 2022, our organization has been dedicated to providing
           quality education and skill development programs to communities across
           South Africa. We believe in empowering individuals through practical
           knowledge and hands-on training.
@@ -54,8 +54,8 @@ export default function HomePage({ navigation }: { navigation: any }) {
       </View>
 
       {/* Courses Section */}
-      <View style={styles.coursesSection}>
-        <Text style={styles.sectionTitle}>Offered courses</Text>
+      <View>
+        <Text style={styles.sectionTitle}>Offered courses</Text> 
         {/* Long Term Courses */}
         <View style={styles.courseCategory}>
           <TouchableOpacity
@@ -68,11 +68,11 @@ export default function HomePage({ navigation }: { navigation: any }) {
               {showLongCourses ? "▼" : "►"}
               {/* This line changes the arrow direction based on the state of the button */}
             </Text>
-          </TouchableOpacity>
+          </TouchableOpacity> 
 
-          {showLongCourses && ( // This line first checks if the state od the button is true (basically open) then shows the courses
-// This block of code represents the courses under the long term courses section
-            <View style={styles.coursesButtons}>
+          {showLongCourses && ( /* This line first checks if the state od the button is true (basically open) then shows the courses
+                                   This block of code represents the courses under the long term courses section*/
+            <View>
               <Button
                 title="First Aid"
                 onPress={() => {navigation.navigate("FirstAid");}}
@@ -105,7 +105,7 @@ export default function HomePage({ navigation }: { navigation: any }) {
 
           {showShortCourses && (
 // This block of code represents the courses under the short term courses section 
-            <View style={styles.coursesButtons}>
+            <View> 
               <Button
                 title="Child Minding"
                 onPress={() => {navigation.navigate("ChildMinding"); }}
@@ -119,7 +119,13 @@ export default function HomePage({ navigation }: { navigation: any }) {
                 onPress={() => {navigation.navigate("GardenMaintenance");
                 }}
               />
+              <Button
+                title="Contact Details"
+                onPress={() => {navigation.navigate("ContactDetails");
+                }}
+              />
             </View>
+            
           )}
         </View>
       </View>
